@@ -1,0 +1,75 @@
+\documentclass{beamer}
+
+\usetheme{codecentric}
+
+\author{Firstname Lastname}
+\institute{codecentric AG}
+
+\title{Example Presentation}
+
+\begin{document}
+{
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{background.png}}
+  \begin{frame}[plain,noframenumbering]
+    \titlepage{}
+  \end{frame}
+}
+
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+
+\section{Introduction}
+
+\begin{frame}
+  \frametitle{The codecentric beamer theme}
+  \begin{itemize}
+  \item this is a template for LaTeX beamer
+  \item can be used to get started with a presentation
+  \item the theme mimics codecentric style
+  \item prs welcome!
+  \end{itemize}
+  \begin{enumerate}
+  \item one
+  \item two
+  \item three
+  \end{enumerate}
+\end{frame}
+
+\section{Blocks}
+
+\begin{frame}
+  \frametitle{Slide showing blocks}
+  \begin{exampleblock}{An Example}
+    \begin{enumerate}
+    \item This is an example block
+    \end{enumerate}
+  \end{exampleblock}
+  \begin{block}{A Block}
+    \begin{enumerate}
+    \item A normal block
+    \end{enumerate}
+  \end{block}
+  \begin{alertblock}{An alert block}
+    \begin{enumerate}
+    \item An alert block with nested itemize
+      \begin{itemize}
+      \item foo
+      \item bar
+      \end{itemize}
+    \end{enumerate}
+  \end{alertblock}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}
+  \frametitle{Conclusion}
+  \begin{description}
+  \item[First description] This concludes the example presentation
+  \item[Second description] Go forth and create beautiful presentations!
+  \end{description}
+\end{frame}
+
+\end{document}
